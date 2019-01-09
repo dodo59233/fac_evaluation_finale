@@ -9,6 +9,9 @@
   <script src="js/script.js"></script>
 </head>
 <body>
+<div class="cache">
+    <?php require "sprite_svg/sprite_symbol_pictos.svg" ?>
+</div>
 
 	<header>
         <div class="nav1">
@@ -56,22 +59,30 @@
 
         <div class="gros-chiffres">
             <div class="chiffre brown">
-                <img src="img/picto_coop.svg">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_coop"></use>
+                </svg>
                 <h3>Lorem Ipsum</h3>
                 <span>190</span>
             </div>
             <div class="chiffre green">
-                <img src="img/picto_photovoltaique.svg">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_photovoltaique"></use>
+                </svg>
                 <h3>Lorem Ipsum</h3>
                 <span>190</span>
             </div>
             <div class="chiffre yellow">
-                <img src="img/picto_production_energie.svg">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_production_energie"></use>
+                </svg>
                 <h3>Lorem Ipsum</h3>
                 <span>190</span>
             </div>
             <div class="chiffre blue">
-                <img src="img/picto_capital.svg">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_capital"></use>
+                </svg>
                 <h3>Lorem Ipsum</h3>
                 <span>190</span>
             </div>

@@ -2,6 +2,14 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
+.cache{
+  display: none;
+}
+
+.iconMenu{
+  width: 90px;
+}
+
 header{
   padding: 10px;
 
@@ -90,6 +98,7 @@ header{
     color: #00afec;
   }
 
+
   .gros-chiffres{
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +115,7 @@ header{
         display: block;
       }
     }
+
   }
 
   .btn-comprendre{
