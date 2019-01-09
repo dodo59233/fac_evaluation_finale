@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Anton");
 @import url(reset.css);
+@font-face {
+  font-family: "Anton";
+  src: url("../polices/1Ptgg87LROyAm3K8-C8QSw.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../polices/S6uyw4BMUTPHjxAwXjeu.woff2") format("woff2");
+}
+
 /* Breakpoints import */
 body {
   font-family: 'Lato', sans-serif;
@@ -12,6 +20,12 @@ body {
 
 .iconMenu {
   width: 90px;
+}
+
+.souscrire-menu {
+  background-color: #d4b51b;
+  padding: 8px;
+  color: white;
 }
 
 header {
@@ -67,7 +81,7 @@ header .nav2 {
 }
 
 .wallpaper {
-  height: 475px;
+  height: 205px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -219,6 +233,7 @@ header .nav2 {
 .container2 article .plus {
   width: 33px;
   margin: 10px;
+  height: 33px;
   cursor: pointer;
 }
 
@@ -281,6 +296,9 @@ header .nav2 {
 }
 
 @media screen and (min-width: 1080px) {
+  .wallpaper {
+    height: 475px;
+  }
   header {
     position: absolute;
     width: 98%;

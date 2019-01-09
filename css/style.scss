@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@font-face {
+  font-family: "Anton";
+  src: url("../polices/1Ptgg87LROyAm3K8-C8QSw.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../polices/S6uyw4BMUTPHjxAwXjeu.woff2") format("woff2");
+}
 @import "reset.css";
 @import "variables";
 

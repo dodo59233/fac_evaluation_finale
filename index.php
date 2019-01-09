@@ -28,7 +28,7 @@
                 <li>Accueil</li>
                 <li>Accueil</li>
                 <li>Accueil</li>
-                <li>Souscrire</li>
+                <li class="souscrire-menu">Souscrire</li>
             </ul>
         </div>
 
@@ -42,7 +42,7 @@
                 <li>Accueil</li>
                 <li>Accueil</li>
                 <li>Accueil</li>
-                <li>Souscrire</li>
+                <li class="souscrire-menu">Souscrire</li>
             </ul>
         </div>
 	</header>

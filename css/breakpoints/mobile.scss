@@ -10,6 +10,12 @@ body{
   width: 90px;
 }
 
+.souscrire-menu{
+  background-color: #d4b51b;
+  padding: 8px;
+  color: white;
+}
+
 header{
   padding: 10px;
 
@@ -65,7 +71,7 @@ header{
 }
 
 .wallpaper{
-  height: 475px;
+  height: 205px;
   object-fit: cover;
 }
 
@@ -222,6 +228,7 @@ header{
     .plus{
       width: 33px;
       margin: 10px;
+      height: 33px;
       cursor: pointer;
     }
 
