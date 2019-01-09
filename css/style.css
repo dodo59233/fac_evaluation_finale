@@ -1,15 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url(reset.css);
+/* Breakpoints import */
 body {
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   padding: 10px;
 }
 
@@ -22,15 +19,39 @@ header .nav1 .logo {
   width: 50%;
 }
 
+header .nav1 .logo img {
+  height: 27px;
+}
+
 header .nav1 .burger {
   background-color: #b3d143;
   width: 35px;
+  cursor: pointer;
 }
 
 header .nav1 .burger div {
   background-color: white;
   margin: 6px 5px;
   height: 2px;
+}
+
+header .nav1 .menu-toggle {
+  position: absolute;
+  background: #b3d143;
+  width: 80%;
+  right: 0;
+  text-align: center;
+  top: 50px;
+  display: none;
+}
+
+header .nav1 .menu-toggle li {
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+header .nav1 .menu-toggle li:hover {
+  background-color: white;
 }
 
 header .nav2 {
@@ -88,13 +109,6 @@ header .nav2 {
   display: block;
 }
 
-.container1 .bg-point {
-  background-image: url("../img/points.svg");
-  padding: 5px;
-  text-align: center;
-  color: grey;
-}
-
 .container1 .btn-comprendre {
   background-color: grey;
   padding: 10px;
@@ -135,6 +149,34 @@ header .nav2 {
   margin-left: 10px;
 }
 
+.bg-point {
+  background-image: url("../img/points.svg");
+  width: 100%;
+}
+
+.bg-point .bg-point-container1 {
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  color: grey;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bg-point .bg-point-container1 h3 {
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.bg-point .bg-point-container1 div {
+  text-align: justify;
+}
+
+.bg-point .bg-point-container1 p {
+  text-align: justify;
+}
+
 .container2 article {
   padding: 10px 0;
   margin: 10px 0;
@@ -143,7 +185,8 @@ header .nav2 {
 
 .container2 article h2 {
   text-transform: uppercase;
-  padding: 0 5px;
+  padding: 8px 5px;
+  font-weight: bold;
 }
 
 .container2 article .img-article {
@@ -152,11 +195,23 @@ header .nav2 {
 }
 
 .container2 article .contenu-article {
-  padding: 0 10px;
+  padding: 0 20px;
+}
+
+.container2 article .contenu-article h3 {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 20px;
 }
 
 .container2 article .btn-savoir-plus {
   display: none;
+}
+
+.container2 article .plus {
+  width: 33px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .container2 .yellow {
@@ -230,7 +285,7 @@ header .nav2 {
     margin-right: 5px;
   }
   header .logo img {
-    height: 72px;
+    width: 72px;
   }
   header .nav2 {
     display: flex;
@@ -250,28 +305,32 @@ header .nav2 {
     background-color: #b3d143;
     height: 36px;
   }
-  .container1 .bg-point {
-    display: flex;
-    justify-content: space-between;
-  }
-  .container1 .bg-point h3 {
-    width: 40%;
-    text-align: right;
-  }
-  .container1 .bg-point div {
-    width: 56%;
-    text-align: left;
-  }
-  .container1 .bg-point .p-flex {
-    width: 56%;
-    text-align: left;
-  }
   .container1 .btn-comprendre {
     width: 60%;
     margin: 20px auto;
   }
   .container1 .btn-souscrire {
     width: 21%;
+  }
+  .bg-point .bg-point-container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+  .bg-point .bg-point-container1 h3 {
+    width: 40%;
+    text-align: right;
+  }
+  .bg-point .bg-point-container1 div {
+    width: 56%;
+    text-align: left;
+  }
+  .bg-point .bg-point-container1 div p {
+    margin-bottom: 12px;
+  }
+  .bg-point .bg-point-container1 .p-flex {
+    width: 56%;
+    text-align: left;
   }
   .container2 .article-flex {
     display: flex;
